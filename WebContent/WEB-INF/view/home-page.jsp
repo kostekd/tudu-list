@@ -25,9 +25,11 @@
                 </div>
                 <div id="right-bar">
                     <div id="right-bar-content">
-                        <div id="sign-up">Sign Up</div>
+                    	<a href="sign-up/showForm">
+                        	<div id="sign-up">Sign Up</div>
+                        </a>
                         <div id="or-div">------- or -------</div>
-                        <a href="log-in">
+                        <a href="log-in/showForm">
                         	<div id="log-in">Log In</div>
                         </a>
                     </div>
