@@ -32,11 +32,17 @@ public class LogInPageController {
 	
 	@PostMapping("/user-confirmation")
 	public String showUserConfirmation(@ModelAttribute("user") User theUser) {
+		
 		System.out.println("com.tudulist: In showUserConfirmation"); //debugging
 		System.out.println(theUser); //debugging
 		User user1 = userService.loadUser(theUser.getFirstName(), theUser.getLastName());
-		return "user-confirmation";
+		
+		//check if user was retrieved from the Database if not return failed-login.jsp page
+		if(user1 == null) {
+			return "failed-login";
+		}
+		else {
+			return "user-confirmation";
+		}
 	}
-	
-	
 }

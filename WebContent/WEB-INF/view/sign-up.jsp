@@ -14,7 +14,7 @@
 	<body>
 		<body>
 		<div id="container">
-			<div id="login-page">
+			<div id="signin-page">
 				<div id="login-left">
 					<img src="${pageContext.request.contextPath}/resources/images/TuDuLogo.png"/>
 				</div>
@@ -30,6 +30,12 @@
 							Email:
 							<br><br> 
 							<input type="text" name="email"/><br/><br/>  
+							Login:
+							<br><br> 
+							<input type="text" name="login"/><br/><br/>
+							Password:
+							<br><br> 
+							<input type="password" name="password"/><br/><br/>
 							<input type="submit" value="Sign Up"/>  
 						</form:form>  
 					</div>
@@ -37,6 +43,4 @@
 			</div>
 		</div>
 	</body>
-
-
 </html>

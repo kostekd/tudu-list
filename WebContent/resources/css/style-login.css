@@ -55,3 +55,16 @@ a {
 	margin-left: 50px;
 	margin-top: 30px;
 }
+
+/*SIGN IN STYLES*/
+
+#signin-page{
+	background-color: white;
+	width:800px;
+	height:600px;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}

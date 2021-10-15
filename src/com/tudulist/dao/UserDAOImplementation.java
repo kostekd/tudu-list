@@ -30,6 +30,9 @@ public class UserDAOImplementation implements UserDAO {
 		//create User instance
 		User theUser = new User();
 		
+		//boolean
+		boolean inDatabase = false;
+		
 		//get the current session
 		Session currentSession = sessionFactory.getCurrentSession();
 		
@@ -41,18 +44,11 @@ public class UserDAOImplementation implements UserDAO {
 					+ firstName + "'"
 								, User.class);
 			theUser = query.getSingleResult();
-			System.out.println(theUser);
 		}
 		catch(Exception e) {
 			System.out.println("Failed to connect to database");
+			theUser = null;
 		}
-			
-			
-		/*
-		catch(Exception e){
-			System.out.println("Failed to load from a database");
-		}
-		*/
 		
 		return theUser;
 	}
