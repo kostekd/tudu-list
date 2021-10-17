@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name="user")
@@ -30,6 +31,10 @@ public class User {
 	
 	@Column(name="password")
 	private String password;
+	
+	//Transient annotation helps ignore this variable while mapping with Hibernate
+	@Transient
+	private String confirmPassword;
 	
 	//default constructor
 	public User() {
@@ -94,6 +99,15 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+
+	public String getConfirmPassword() {
+		return confirmPassword;
+	}
+
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
 	}
 
 	@Override

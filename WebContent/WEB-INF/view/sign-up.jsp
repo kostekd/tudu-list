@@ -12,35 +12,37 @@
 	</head>
 	
 	<body>
-		<body>
 		<div id="container">
 			<div id="signin-page">
-				<div id="login-left">
-					<img src="${pageContext.request.contextPath}/resources/images/TuDuLogo.png"/>
-				</div>
-				<div id="login-right">
-					<div id="login-form">
-						<form:form action="user-confirmation" modelAttribute="user" method="POST">
+				<div id="signin-title"> Registration form </div>
+				
+					<form:form action="user-confirmation" modelAttribute="user" method="POST">
+						<div id="signin-left">
 							First Name:
 							<br><br>
-							<input type="text" name="firstName"/><br/><br/>  
+							<input type="text" name="firstName" placeholder="Enter your first name"/><br/><br/>  
 							Last Name:
 							<br><br>
-							<input type="text" name="lastName"/><br/><br/>  					
+							<input type="text" name="lastName" placeholder="Enter your last name"/><br/><br/>  					
 							Email:
 							<br><br> 
-							<input type="text" name="email"/><br/><br/>  
+							<input type="text" name="email" placeholder="Enter your email"/><br/><br/>
+						</div> 
+							
+						<div id="signin-right">
 							Login:
 							<br><br> 
-							<input type="text" name="login"/><br/><br/>
+							<input type="text" name="login" placeholder="Enter your username"/><br/><br/>
 							Password:
 							<br><br> 
-							<input type="password" name="password"/><br/><br/>
+							<input type="password" name="password" placeholder="Enter your password"/><br/><br/>
+							Confirm password:
+							<br><br> 
+							<input type="password" name="confirmPassword" placeholder="Confirm password"/><br/><br/>
 							<input type="submit" value="Sign Up"/>  
-						</form:form>  
-					</div>
+						</div>
+					</form:form>  
 				</div>
 			</div>
-		</div>
 	</body>
 </html>

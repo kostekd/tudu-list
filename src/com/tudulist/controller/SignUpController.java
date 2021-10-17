@@ -34,9 +34,23 @@ public class SignUpController {
 	//display the confirmation of Signing up and pass Model User Data
 	@RequestMapping("/user-confirmation")
 	public String saveConfirmation(@ModelAttribute("user") User theUser) {
+		
+		//display in the console 
 		System.out.println(theUser);
-		userService.saveUser(theUser);
-		return "user-confirmation";
+		
+		//check if password and confirmPassword matches
+		if(theUser.getPassword().equals(theUser.getConfirmPassword())) {
+			
+			System.out.println("Success!");
+			//add user to the database
+			userService.saveUser(theUser);
+			
+			return "user-confirmation";
+		}
+		else {
+			System.out.println("Failed! :(");
+			return "fail-singin";
+		}
 	}
 	
 }
