@@ -9,5 +9,6 @@ Technologies that are used:
 -Spring MVC
 -Hibernate
 -MySQL
+-Tomcat
 
 The main purpose of this project is to create a Web Application for better time management.
