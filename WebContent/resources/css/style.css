@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Urbanist:ital,wght@0,600;1,100;1,300&display=swap');
 
 body {
-    background-color: #373737;
+    background-image: linear-gradient(90deg, #9055FF , #13E2DA);
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
@@ -21,14 +21,17 @@ a {
 #topbar {
     height: 200px;
     /*border-radius: 15px;*/
-    background-color: white; 
 }
 #logo {
     float:left;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-    border-right: 2px dotted grey;
+}
+
+#logo:hover{
+	 animation-duration: 1s;
+	transform: scale(1.3);  
 }
 
 #function {
@@ -56,8 +59,8 @@ a {
 }
 
 #right-bar-content {
-    height: 150px;
-    width: 250px;
+    height: 100px;
+    width: 200px;
     position: relative;
     left: 50%;
     top: 50%;
@@ -90,12 +93,16 @@ a {
     cursor: pointer;
 }
 
-#login:hover {
+#log-in:hover {
     cursor: focus;
 }
 
 #main-content {
     clear:both;
+    background-color: white;
+    border-radius: 15px;
+    width: 1200px;
+    height: 800px;
 }
 
 .functionElement{

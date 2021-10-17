@@ -37,7 +37,7 @@
             </div>
             
             <div id="main-content"> 
-                <img src="${pageContext.request.contextPath}/resources/images/turkus.jpg"/>
+       
             </div>
         </div>
     
