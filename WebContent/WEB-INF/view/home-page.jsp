@@ -8,6 +8,7 @@
         <meta name="description" content = "Orginize your space"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
         <link rel='stylesheet' type='text/css' href="${pageContext.request.contextPath}/resources/css/style.css">
+        <script src="${pageContext.request.contextPath}/resources/javascript/app.js"> </script>
     </head>
     
     <body>
